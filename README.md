@@ -1,19 +1,39 @@
-# 🎈 Blank app template
+# AI Storytelling App for Kids
 
-A simple Streamlit app template for you to modify!
+This project is a Streamlit storytelling application for ISOM5240 Assignment 1.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Features
 
-### How to run it on your own machine
+- Upload an image
+- Generate an image caption with a Hugging Face image model
+- Generate a 50-100 word story for children
+- Convert the story into speech
 
-1. Install the requirements
+## Models and Tools
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- Image captioning model: `Salesforce/blip-image-captioning-base`
+- Story generation model: `google/flan-t5-small`
+- Text-to-speech: `gTTS`
+- Web framework: `Streamlit`
 
-2. Run the app
+## Run Locally
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Start the Streamlit app:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+## Streamlit Cloud Deployment
+
+1. Upload this project to GitHub.
+2. Sign in to Streamlit Cloud.
+3. Create a new app from this repository.
+4. Set the main file path to `streamlit_app.py` if needed.
+5. Deploy and copy the public URL for submission.
